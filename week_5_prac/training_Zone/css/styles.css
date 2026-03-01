@@ -33,7 +33,7 @@ p {
 /* Base page styles: dark outer background + default font */
 body {
     background-color: #100a8e;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 /* Responsive images: scale down to fit containers */
@@ -44,16 +44,10 @@ img {
 
 /* Header: centered like wireframe */
 header {
-    position: sticky;
-    top: 0;
-    background-color: #100a8e;
-
     width: 100%;
     float: none;
     text-align: center;
     padding: 1.5em 0 0.5em;
-
-    z-index: 10;
 }
 
 header img {
@@ -89,13 +83,14 @@ nav li {
     display: inline-block;
     font-size: 1.5em;
     font-weight: bold;
+    font-family: 'Francois One', sans-serif;
 }
 
 /* Navigation links */
 nav li a {
     display: inline-block;
     color: #fff;
-    font-family: 'Francois One', sans-serif;
+
     padding: 0.5em 1em;
     text-decoration: none;
 }
@@ -104,9 +99,25 @@ nav li a {
 main {
     clear: both;
     background-color: #fff;
-    font-family: 'Roboto', sans-serif;
     padding: 2%;
     font-size: 1.1em;
+}
+
+/* Telephone link style (Prac 5) */
+.tel-link {
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
 }
 
 /* Footer text: smaller and centered on dark background */
@@ -197,55 +208,4 @@ footer p a {
 #training h2 {
     text-align: center;
     margin-bottom: 1em;
-}
-
-/* ===== Mobile layout ===== */
-@media (max-width: 768px) {
-
-    nav {
-        padding: 1%;
-        margin-bottom: 1%;
-    }
-
-    nav ul {
-        text-align: center;
-        padding: 0;
-    }
-
-    nav li {
-        display: block;
-        font-size: 1.5em;
-        font-family: 'Francois One', sans-serif;
-        border-top: 1px solid #fff;
-    }
-
-    nav li a {
-        display: block;
-        padding: 0.5em 1em;
-    }
-
-    /* Stack your flex layouts on mobile */
-    .two-col {
-        flex-direction: column;
-    }
-
-    .cards {
-        flex-direction: column;
-    }
-}
-
-.tel-link {
-  background-color: #404040;
-  padding: 2%;
-  margin: 1em auto;
-  width: 80%;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.tel-link a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5em;
-  display: block;
 }
