@@ -24,32 +24,38 @@ p {
     border: 0;
 }
 
+/* Page wrapper: center content and limit overall width */
 #container {
     width: 90%;
     margin: 0 auto;
 }
 
+/* Base page styles: dark outer background + default font */
 body {
     background-color: #000;
     font-family: Verdana, Arial, sans-serif;
 }
 
+/* Responsive images: scale down to fit containers */
 img {
     max-width: 100%;
     display: block;
 }
 
+/* Header layout: left column */
 header {
     width: 25%;
     float: left;
 }
 
+/* Navigation layout: right column */
 nav {
     width: 70%;
     float: right;
     margin: 5em 3em 0 0;
 }
 
+/* Main content: clear floats and use readable content area */
 main {
     clear: left;
     background-color: #fff;
@@ -57,18 +63,21 @@ main {
     font-size: 1.1em;
 }
 
+/* Navigation list: remove bullets and align items to the right */
 nav ul {
     list-style-type: none;
     margin: 0;
     text-align: right;
 }
 
+/* Navigation items: horizontal layout and larger text */
 nav li {
     display: inline-block;
     font-size: 1.5em;
     font-weight: bold;
 }
 
+/* Navigation links: clickable blocks with padding */
 nav li a {
     display: block;
     color: #fff;
@@ -77,6 +86,7 @@ nav li a {
     text-decoration: none;
 }
 
+/* Footer text: smaller and centered on dark background */
 footer p {
     font-size: 0.75em;
     text-align: center;
@@ -84,6 +94,7 @@ footer p {
     padding: 0 1em;
 }
 
+/* Footer links: match footer colour and remove underline */
 footer p a {
     color: #fff;
     text-decoration: none;
