@@ -5,73 +5,158 @@ File Name: styles.css
 */
 
 /* CSS reset */
-body, header, nav, main, footer, h1, h2, h3, div, img, ul, li, section, p {
-  margin: 0;
-  padding: 0;
-  border: 0;
+body,
+header,
+nav,
+main,
+footer,
+h1,
+h2,
+h3,
+div,
+img,
+ul,
+li,
+section,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 #container {
-  width: 90%;
-  margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
 }
 
 body {
-  background-color: #000;
-  font-family: Verdana, Arial, sans-serif;
+    background-color: #000;
+    font-family: Verdana, Arial, sans-serif;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 header {
-  width: 25%;
-  float: left;
+    width: 25%;
+    float: left;
 }
 
 nav {
-  width: 70%;
-  float: right;
-  margin: 5em 3em 0 0;
+    width: 70%;
+    float: right;
+    margin: 5em 3em 0 0;
 }
 
 main {
-  clear: left;
-  background-color: #fff;
-  padding: 2%;
-  font-size: 1.1em;
+    clear: left;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.1em;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  text-align: right;
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
 }
 
 nav li {
-  display: inline-block;
-  font-size: 1.5em;
-  font-weight: bold;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 nav li a {
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 0.5em 1em;
-  text-decoration: none;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
 }
 
 footer p {
-  font-size: 0.75em;
-  text-align: center;
-  color: #fff;
-  padding: 0 1em;
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
 }
 
 footer p a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* --- Wireframe layout helpers --- */
+.two-col {
+    display: flex;
+    gap: 2%;
+    align-items: stretch;
+}
+
+.two-col .col {
+    flex: 1;
+}
+
+/* Make left column stack vertically */
+.left-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Push Why Choose to bottom */
+.left-col .why-choose {
+    margin-top: auto;
+    padding-top: 1em;
+}
+
+/* Cards row for training categories */
+.cards {
+    display: flex;
+    gap: 2%;
+    margin-top: 1em;
+}
+
+.card {
+    flex: 1;
+    border: 2px solid #5b1f1f;
+    padding: 1em;
+    background: #fff;
+}
+
+/* CTA button styling */
+.cta {
+    margin-top: 1em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.6em 1em;
+    margin-right: 0.5em;
+    background: #5b1f1f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-outline {
+    background: transparent;
+    color: #5b1f1f;
+    border: 2px solid #5b1f1f;
+}
+
+/* Final CTA bar */
+#final-cta {
+    margin: 2em 0;
+    padding: 1.5em;
+    border: 2px solid #5b1f1f;
+    text-align: center;
+    background: #fff;
+}
+
+#training h2 {
+    text-align: center;
+    margin-bottom: 1em;
 }

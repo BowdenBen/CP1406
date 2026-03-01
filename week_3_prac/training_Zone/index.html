@@ -38,80 +38,97 @@
         <!-- Main content area -->
         <main>
 
-            <!-- HERO: Key message + call to action + supporting image -->
-            <section>
+            <!-- HERO: 2-column layout (text left, image right) -->
+            <section id="hero">
                 <h2>Advance Your Career with Training Zone</h2>
 
-                <section>
-                    <h3>Local training for residents aged 18-45</h3>
-                    <p>
-                        Training Zone provides practical Management and IT training designed to help
-                        local residents build skills and improve career opportunities.
-                    </p>
+                <div class="two-col">
+                    <!-- Left: content focus -->
+                    <div class="col left-col">
+                        <h3>Local training for residents aged 18-45</h3>
+                        <p>
+                            Training Zone provides practical Management and IT training designed to help
+                            local residents build skills and improve career opportunities.
+                        </p>
 
-                    <p>
-                        <strong>Call to action:</strong>
-                        <a href="contact.html">Enquire / Book</a> &nbsp; &#9475; &nbsp;
-                        <a href="training.html">View Training</a>
-                    </p>
-                </section>
+                        <p class="cta">
+                            <a class="button" href="training.html">View Courses</a>
+                            <a class="button button-outline" href="contact.html">Enquire Now</a>
+                        </p>
 
-                <section>
-                    <h3>Visual credibility</h3>
-                    <p>
+                        <div class="why-choose">
+                            <h2>Why Choose Training Zone?</h2>
+                            <ul>
+                                <li>Local Cairnsville provider</li>
+                                <li>Management and IT training focus</li>
+                                <li>Experienced trainers</li>
+                                <li>Practical, job-relevant skills</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Right: visual credibility -->
+                    <div class="col">
                         <img src="images/classroom-session.jpg" alt="Trainer presenting to a group in a classroom">
-                    </p>
-                </section>
+                    </div>
+                </div>
             </section>
 
             <!-- Trust strip: quick reasons to choose the business -->
             <section>
-                <h2>Why Choose Training Zone?</h2>
-                <ul>
-                    <li>Local Cairnsville provider</li>
-                    <li>Management and IT training focus</li>
-                    <li>Experienced trainers</li>
-                    <li>Practical, job-relevant skills</li>
-                </ul>
+
             </section>
 
-            <!-- Training overview: links to enquiries -->
+            <!-- TRAINING CATEGORIES: 3 cards -->
             <section id="training">
                 <h2>Training Categories</h2>
 
-                <section>
-                    <h3>Management Training</h3>
-                    <p>Leadership, communication, workplace performance and professional development.</p>
-                    <p><a href="contact.html">Enquire about Management</a></p>
-                </section>
+                <div class="cards">
+                    <section class="card">
+                        <h3>Management</h3>
+                        <p>Leadership, communication, workplace performance and professional development.</p>
+                        <p><a href="training.html">Learn more</a></p>
+                    </section>
 
-                <section>
-                    <h3>IT Training</h3>
-                    <p>Practical IT skills including programming, security, databases and systems.</p>
-                    <p><a href="contact.html">Enquire about IT</a></p>
-                </section>
+                    <section class="card">
+                        <h3>IT Training</h3>
+                        <p>Practical IT skills including programming, security, databases and systems.</p>
+                        <p><a href="training.html">Learn more</a></p>
+                    </section>
 
-                <section>
-                    <h3>Evening / Special Sessions</h3>
-                    <p>Flexible sessions and special offers for local trainees.</p>
-                    <p><a href="#announcements">See announcements</a></p>
-                </section>
+                    <section class="card">
+                        <h3>Evening / Special</h3>
+                        <p>Flexible sessions and special offers for local trainees.</p>
+                        <p><a href="#announcements">Learn more</a></p>
+                    </section>
+                </div>
             </section>
 
-            <!-- About preview: brief context + image + link to trainers -->
+            <!-- FINAL CALL TO ACTION (full-width bar) -->
+            <section id="final-cta">
+                <h2>Final Call to Action</h2>
+                <p><a class="button" href="contact.html">Enquire / Book Now</a></p>
+            </section>
+
+            <!-- ABOUT: 2-column layout (image left, text right) -->
             <section id="about">
                 <h2>About Training Zone</h2>
-                <p>
-                    Training Zone has been a leader in management and IT training in Cairnsville for many years.
-                    Our goal is to increase awareness so more local people know about our services and can benefit from
-                    them.
-                </p>
 
-                <p>
-                    <img src="images/meeting-room.jpg" alt="Training meeting room setup">
-                </p>
+                <div class="two-col">
+                    <div class="col">
+                        <img src="images/meeting-room.jpg" alt="Training meeting room setup">
+                    </div>
 
-                <p><a href="trainers.html">Meet our trainers</a></p>
+                    <div class="col">
+                        <p>
+                            Training Zone has been a leader in management and IT training in Cairnsville for many years.
+                            Our goal is to increase awareness so more local people know about our services and can
+                            benefit from them.
+                        </p>
+                        <p><a href="about.html">Read more about Training Zone</a></p>
+                        <p><a href="trainers.html">Meet our trainers</a></p>
+                    </div>
+                </div>
             </section>
 
             <!-- Announcements: short updates/offers -->
