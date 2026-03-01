@@ -48,6 +48,10 @@ header {
     float: none;
     text-align: center;
     padding: 1.5em 0 0.5em;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #100a8e;
+    top: 0;
 }
 
 header img {
@@ -100,10 +104,11 @@ main {
     clear: both;
     background-color: #fff;
     padding: 2%;
-    font-size: 1.1em;
+    font-size: 1.15em; 
+    font-family: 'Roboto Slab', serif;
 }
 
-/* Telephone link style (Prac 5) */
+/* Telephone link style */
 .tel-link {
     background-color: #404040;
     padding: 2%;
@@ -208,4 +213,9 @@ footer p a {
 #training h2 {
     text-align: center;
     margin-bottom: 1em;
+}
+
+/* hours list indent */
+.hours {
+    margin-left: 10%;
 }
