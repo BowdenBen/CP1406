@@ -4,8 +4,15 @@ Date: 2026-03-01
 File Name: styles.css
 */
 
+/* CSS reset */
+body, header, nav, main, footer, h1, div, img, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 body {
-    background-color: #ccc;
+  background-color: #000;
 }
 
 header {
@@ -27,7 +34,9 @@ nav ul {
 
 nav li {
   display: inline-block;
-  font-size: 1.75em;
+  font-size: 1.5em;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
 }
 
 nav li a {
@@ -60,4 +69,41 @@ footer p {
 footer p a {
   color: #fff;
   text-decoration: none;
+}
+
+#weights, #cardio, #training {
+  width: 29%;
+  float: left;
+  margin: 0 2%;
+}
+
+#exercises {
+  clear: left;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background-color: #f2f2f2;
+  padding: 1% 2%;
+}
+
+#exercises dt {
+  font-weight: bold;
+}
+
+#exercises dd {
+  padding: 0.5% 1% 2% 0;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact a {
+  color: #666600;
+  text-decoration: none;
+}
+
+.action {
+  font-size: 1.35em;
+  color: #666600;
+  font-weight: bold;
 }
