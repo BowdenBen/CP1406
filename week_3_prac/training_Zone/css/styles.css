@@ -118,7 +118,8 @@ footer p a {
 }
 
 /* Push Why Choose to bottom */
-.left-col .why-choose {
+.left-col .why-choose,
+.left-col .plan-content {
     margin-top: auto;
     padding-top: 1em;
 }
